@@ -1,326 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="imgs/title.png" />
     <title>MYAURA</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="containerHead">
-            <i class="fa-solid fa-chevron-left"></i>
-            <div class="headTxt" id="head-text-1">Free Shipping Nationwide</div>
-            <!-- <div class="headTxt" id="head-text-2">Easy Return and Exchanges</div> -->
-            <i class="fa-solid fa-chevron-right"></i>
+      <div class="containerHead">
+        <div class="inner-Head-Container">
+          <button class="arrow Left" id="leftArrow">&#10094;</button>
+          <div class="textSlider">
+            <div class="text">Free Shipping Nationwide</div>
+            <div class="text">Easy Retrun and Exchange</div>
+          </div>
+          <button class="arrow Right" id="rightArrow">&#10095;</button>
         </div>
+      </div>
     </header>
     <!--navigation bar-->
-   <!-- Home-Page -->
+    <!-- Home-Page -->
     <div class="Home">
-        <div class="navbar">
-            <div class="lang">
-                <div class="imgPKR"></div>
-                EN | PKR
-            </div>
-            <div class="logo"></div>
-            <div class="search">
-                <div class="searchBar">Search<i class="fa-solid fa-magnifying-glass"></i></div>
-                <i class="fa-regular fa-user"></i>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
+      <div class="navbar">
+        <div class="lang">
+          <div class="imgPKR"></div>
+          <select name="langu" id="language">
+            <option value="EN">EN | PKR</option>
+          </select>
         </div>
-        <div class="menu">
-            <a class="heading" href="#">HOME</a>
-            <a class="heading" href="#">BUNDLE DEALS</a>
-            <a class="heading" href="#">APPAREL</a>
-            <a class="heading" href="#">FRAGRENCES</a>
-            <a class="heading" href="#">OUR STORY</a>
+        <div class="logo"></div>
+        <div class="search">
+          <div class="searchBar">
+            <input type="text" placeholder="Search" class="search-txt" />
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="cursor: pointer; color: black"
+            ></i>
+          </div>
+          <i
+            class="fa-regular fa-user"
+            style="cursor: pointer; color: black"
+          ></i>
+          <i
+            class="fa-regular fa-heart"
+            style="cursor: pointer; color: black"
+          ></i>
+          <i
+            class="fa-solid fa-cart-shopping"
+            style="cursor: pointer; color: black"
+          ></i>
         </div>
+      </div>
+      <div class="menu">
+        <a class="heading" href="#">HOME</a>
+        <a class="heading" href="bundles.html">BUNDLE DEALS</a>
+        <a class="heading" href="dress-menu.html">APPAREL</a>
+        <a class="heading" href="fragrance.html">FRAGRENCES</a>
+        <a class="heading" href="story.html">OUR STORY</a>
+      </div>
     </div>
     <!-- shopping -->
     <div class="shop">
-        <div class="shopHead">Shop by Category</div>
-        <div class="shopPics">
-            <div class="shop-pic" ><img src="imgs/shopPic1.png"></div>
-            <div class="shop-pic" ><img src="imgs/homepic3.png"></div>
-            <div class="shop-pic" ><img src="imgs/bundle.png"></div>
-            <div class="shop-pic" ><img src="imgs/homepic2.png"></div>
-        </div>
-       <div class="shopheadings">
-        <a class="category" href="#">Apparel</a>
-        <a class="category" href="#">Perfumes</a>
-        <a class="category" href="#">Bundles</a>
-        <a class="category" href="#">Body Mists</a>
-       </div> 
+      <div class="shopHead">Shop by Category</div>
+      <div class="shopPics">
+        <a class="shop-pic" href="dress-menu.html" style="animation: none;"> <img src="imgs/shopPic1.png"/></a>
+        <a class="shop-pic" href="fragrance.html" style="animation: none;"><img src="imgs/homepic3.png" /></a>
+        <a class="shop-pic" href="bundles.html" style="animation: none;"><img src="imgs/bundle.png" /> </a>
+        <a class="shop-pic" href="bodyMist.html" style="animation: none;"><img src="imgs/homepic2.png" /> </a>
+      </div>
+      <div class="shopheadings">
+        <a class="category" href="dress-menu.html">Apparel</a>
+        <a class="category" href="fragrance.html">Perfumes</a>
+        <a class="category" href="bundles.html">Bundles</a>
+        <a class="category" href="bodyMist.html">Body Mists</a>
+      </div>
     </div>
     <!-------------- blessed-friday-section ------------------------------>
     <div class="Blessed-Friday-Section">
-       <div class="blessed-text">
+      <div class="blessed-text">
         <div class="shopHead" id="blessed-head">Blessed Friday Sale</div>
-        <a id="view-all" href="#">View All</a>
-       </div>
-       <div class="blessed-clothing">
-        <i class="fa-solid fa-chevron-left left" id="preBtn"></i>
-            <div class="clothes">
-            <div class="cloth-img" id="cloth-img-1">
-                <div class="cloth-img-text">Sale</div>
-                <i class="fa-regular fa-heart cloth-icon " ></i>
-                <i class="fa-regular fa-eye cloth-icon"></i>
-                <div class="quick-add">QUICK ADD</div>
-            </div>
-            <div class="cloth-price">
-                <div class="cloth-price-season">WINTER &#10052;</div>
-                <div class="cloth-price-variety">2 piece - Ready to Wear</div>
-                <div class="cloth-price-price"><s>Rs. 4,700.00</s>Rs. 4,230.00</div>
-            </div>
+        <a id="view-all" href="dress-menu.html">View All</a>
+      </div>
+      <div class="blessed-clothing">
+        <div class="clothes">
+          <div class="cloth-img" id="cloth-img-1">
+            <div class="cloth-img-text">Sale</div>
+            <i class="fa-regular fa-heart cloth-icon"></i>
+            <i class="fa-regular fa-eye cloth-icon"></i>
+            <div class="quick-add">QUICK ADD</div>
+          </div>
+          <div class="cloth-price">
+            <div class="cloth-price-season">WINTER &#10052;</div>
+            <div class="cloth-price-variety">2 piece - Ready to Wear</div>
+            <div class="cloth-price-price"><s>Rs. 4,700.00</s>Rs. 4,230.00</div>
+          </div>
         </div>
         <div class="clothes">
-            <div class="cloth-img" id="cloth-img-2">
-                <div class="cloth-img-text">Sale</div>
-                <i class="fa-regular fa-heart cloth-icon" ></i>
-                <i class="fa-regular fa-eye cloth-icon"></i>
-                <div class="quick-add">QUICK ADD</div>
-            </div>
-            <div class="cloth-price">
-                <div class="cloth-price-season">WINTER &#10052;</div>
-                <div class="cloth-price-variety">2 piece - Ready to Wear</div>
-                <div class="cloth-price-price"><s>Rs. 5,500.00</s>Rs. 4,950.00</div>
-            </div>
+          <div class="cloth-img" id="cloth-img-2">
+            <div class="cloth-img-text">Sale</div>
+            <i class="fa-regular fa-heart cloth-icon"></i>
+            <i class="fa-regular fa-eye cloth-icon"></i>
+            <div class="quick-add">QUICK ADD</div>
+          </div>
+          <div class="cloth-price">
+            <div class="cloth-price-season">WINTER &#10052;</div>
+            <div class="cloth-price-variety">2 piece - Ready to Wear</div>
+            <div class="cloth-price-price"><s>Rs. 5,500.00</s>Rs. 4,950.00</div>
+          </div>
         </div>
         <div class="clothes">
-            <div class="cloth-img" id="cloth-img-3">
-                <div class="cloth-img-text">Sale</div>
-                <i class="fa-regular fa-heart cloth-icon" ></i>
-                <i class="fa-regular fa-eye cloth-icon"></i>
-                <div class="quick-add">QUICK ADD</div>
-            </div>
-            <div class="cloth-price">
-                <div class="cloth-price-season">WINTER &#10052;</div>
-                <div class="cloth-price-variety">2 piece - Ready to Wear</div>
-                <div class="cloth-price-price"><s>Rs. 4,700.00</s>Rs. 3,055.00</div>
-            </div>
+          <div class="cloth-img" id="cloth-img-3">
+            <div class="cloth-img-text">Sale</div>
+            <i class="fa-regular fa-heart cloth-icon"></i>
+            <i class="fa-regular fa-eye cloth-icon"></i>
+            <div class="quick-add">QUICK ADD</div>
+          </div>
+          <div class="cloth-price">
+            <div class="cloth-price-season">WINTER &#10052;</div>
+            <div class="cloth-price-variety">2 piece - Ready to Wear</div>
+            <div class="cloth-price-price"><s>Rs. 4,700.00</s>Rs. 3,055.00</div>
+          </div>
         </div>
         <div class="clothes">
-            <div class="cloth-img" id="cloth-img-4">
-                <div class="cloth-img-text">Sale</div>
-                <i class="fa-regular fa-heart cloth-icon" ></i>
-                <i class="fa-regular fa-eye cloth-icon"></i>
-                <div class="quick-add">QUICK ADD</div>
-            </div>
-            <div class="cloth-price">
-                <div class="cloth-price-season">WINTER &#10052;</div>
-                <div class="cloth-price-variety">2 piece - Ready to Wear</div>
-                <div class="cloth-price-price"><s>Rs. 4,700.00</s>Rs. 2,795.00</div>
-            </div>
+          <div class="cloth-img" id="cloth-img-4">
+            <div class="cloth-img-text">Sale</div>
+            <i class="fa-regular fa-heart cloth-icon"></i>
+            <i class="fa-regular fa-eye cloth-icon"></i>
+            <div class="quick-add">QUICK ADD</div>
+          </div>
+          <div class="cloth-price">
+            <div class="cloth-price-season">WINTER &#10052;</div>
+            <div class="cloth-price-variety">2 piece - Ready to Wear</div>
+            <div class="cloth-price-price"><s>Rs. 4,700.00</s>Rs. 2,795.00</div>
+          </div>
         </div>
-        <!-- <div class="clothes">
-            <div class="cloth-img" id="cloth-img-5">
-                <div class="cloth-img-text">Sale</div>
-                <i class="fa-regular fa-heart cloth-icon" ></i>
-                <i class="fa-regular fa-eye cloth-icon"></i>
-                <div class="quick-add">QUICK ADD</div>
-            </div>
-            <div class="cloth-price">
-                <div class="cloth-price-season">WINTER &#10052;</div>
-                <div class="cloth-price-variety">2 piece - Ready to Wear</div>
-                <div class="cloth-price-price"><s>Rs. 4,900.00</s>Rs. 3.185.00</div>
-            </div>
-        </div>
-        <div class="clothes">
-            <div class="cloth-img" id="cloth-img-6">
-                <div class="cloth-img-text">Sale</div>
-                <i class="fa-regular fa-heart cloth-icon" ></i>
-                <i class="fa-regular fa-eye cloth-icon"></i>
-                <div class="quick-add">QUICK ADD</div>
-            </div>
-            <div class="cloth-price">
-                <div class="cloth-price-season">WINTER &#10052;</div>
-                <div class="cloth-price-variety">2 piece - Ready to Wear</div>
-                <div class="cloth-price-price"><s>Rs. 4,900.00</s>Rs. 4,410.00</div>
-            </div>
-        </div> -->
-    <!-- </div> -->
-        <i class="fa-solid fa-chevron-right right" id="nxtBtn"></i>
-       </div> 
+      </div>
     </div>
     <section class="perfume-section">
-        <a href="#">
-            <div class="perfume"></div>
-        </a>
+      <a href="#">
+        <div class="perfume"></div>
+      </a>
     </section>
     <!-- ----------------------- PERFUME SECTION ----------------------- -->
-    <section  class="tending-now">
-        <div class="blessed-text">
-            <div class="shopHead" id="blessed-head">Trending Now</div>
-            <a id="view-all" href="#">View All</a>
-           </div>
-           <div class="blessed-clothing">
-            <i class="fa-solid fa-chevron-left left" id="preBtn"></i>    
+    <section class="tending-now">
+      <div class="blessed-text">
+        <div class="shopHead" id="blessed-head">Trending Now</div>
+        <a id="view-all" href="fragrance.html">View All</a>
+      </div>
+      <div class="blessed-clothing">
         <div class="clothes">
-        <div class="cloth-img" id="perfume-img-1">
+          <div class="cloth-img" id="perfume-img-1">
             <div class="cloth-img-text">Sale</div>
-            <i class="fa-regular fa-heart cloth-icon" ></i>
+            <i class="fa-regular fa-heart cloth-icon"></i>
             <i class="fa-regular fa-eye cloth-icon"></i>
-            <div class="quick-add">ADD TO CART</div>
-        </div>
-        <div class="cloth-price">
+            <div class="quick-add">QUICK ADD</div>
+          </div>
+          <div class="cloth-price">
             <div class="cloth-price-season">FRESH & FLORAL</div>
-            <div class="cloth-price-variety" style="font-size: 0.8rem;">50 ML</div>
+            <div class="cloth-price-variety" style="font-size: 0.8rem">
+              50 ML
+            </div>
             <div class="cloth-price-price"><s>Rs. 2,250.00</s>Rs. 1,800.00</div>
+          </div>
         </div>
-    </div>
-    <div class="clothes">
-        <div class="cloth-img" id="perfume-img-2">
+        <div class="clothes">
+          <div class="cloth-img" id="perfume-img-2">
             <div class="cloth-img-text">Sale</div>
-            <i class="fa-regular fa-heart cloth-icon" ></i>
+            <i class="fa-regular fa-heart cloth-icon"></i>
             <i class="fa-regular fa-eye cloth-icon"></i>
-            <div class="quick-add">ADD TO CART</div>
-        </div>
-        <div class="cloth-price">
+            <div class="quick-add">QUICK ADD</div>
+          </div>
+          <div class="cloth-price">
             <div class="cloth-price-season">SWEET, WARM & VANILLA</div>
-            <div class="cloth-price-variety" style="font-size: 0.8rem;">50 ML</div>
+            <div class="cloth-price-variety" style="font-size: 0.8rem">
+              50 ML
+            </div>
             <div class="cloth-price-price"><s>Rs. 2,250.00</s>Rs. 1,800.00</div>
+          </div>
         </div>
-    </div>
-    <div class="clothes">
-        <div class="cloth-img" id="perfume-img-3">
-            <div class="cloth-img-text">Sale</div>
-            <i class="fa-regular fa-heart cloth-icon" ></i>
-            <i class="fa-regular fa-eye cloth-icon"></i>
-            <div class="quick-add">ADD TO CART</div>
-        </div>
-        <div class="cloth-price">
-            <div class="cloth-price-season">CITRUS & FLORAL</div>
-            <div class="cloth-price-variety" style="font-size: 0.8rem;">50 ML</div>
-            <div class="cloth-price-price"><s>Rs. 2,250.00</s>Rs. 1,800.00</div>
-        </div>
-    </div>
-    <div class="clothes">
-        <div class="cloth-img" id="perfume-img-4">
-            <div class="cloth-img-text">Sale</div>
-            <i class="fa-regular fa-heart cloth-icon" ></i>
-            <i class="fa-regular fa-eye cloth-icon"></i>
-            <div class="quick-add">ADD TO CART</div>
-        </div>
-        <div class="cloth-price">
-            <div class="cloth-price-season">FLORAL & WARM</div>
-            <div class="cloth-price-variety" style="font-size: 0.8rem;">50 ML</div>
-            <div class="cloth-price-price"><s>Rs. 2,250.00</s>Rs. 1,800.00</div>
-        </div>
-    </div>
-    <!--<div class="clothes">
-         <div class="cloth-img" id="perfume-img-5">
-            <div class="cloth-img-text">Sale</div>
-            <i class="fa-regular fa-heart cloth-icon" ></i>
-            <i class="fa-regular fa-eye cloth-icon"></i>
-            <div class="quick-add">ADD TO CART</div>
-        </div>
-        <div class="cloth-price">
-            <div class="cloth-price-season">FRESH & FLORAL</div>
-            <div class="cloth-price-variety" style="font-size: 0.8rem;">50 ML</div>
-            <div class="cloth-price-price"><s>Rs. 2,250.00</s>Rs. 1,800.00</div>
-        </div>
-      </div>  
         <div class="clothes">
-            <div class="cloth-img" id="perfume-img-6">
-                <div class="cloth-img-text">Sale</div>
-                <i class="fa-regular fa-heart cloth-icon" ></i>
-                <i class="fa-regular fa-eye cloth-icon"></i>
-                <div class="quick-add">ADD TO CART</div>
+          <div class="cloth-img" id="perfume-img-3">
+            <div class="cloth-img-text">Sale</div>
+            <i class="fa-regular fa-heart cloth-icon"></i>
+            <i class="fa-regular fa-eye cloth-icon"></i>
+            <div class="quick-add">QUICK ADD</div>
+          </div>
+          <div class="cloth-price">
+            <div class="cloth-price-season">CITRUS & FLORAL</div>
+            <div class="cloth-price-variety" style="font-size: 0.8rem">
+              50 ML
             </div>
-            <div class="cloth-price">
-                <div class="cloth-price-season">FRESH & FLORAL</div>
-                <div class="cloth-price-variety" style="font-size: 0.8rem;">50 ML</div>
-                <div class="cloth-price-price"><s>Rs. 2,250.00</s>Rs. 1,800.00</div>
-            </div>
-           </div> 
-            <div class="clothes">
-                <div class="cloth-img" id="perfume-img-7">
-                    <div class="cloth-img-text">Sale</div>
-                    <i class="fa-regular fa-heart cloth-icon" ></i>
-                    <i class="fa-regular fa-eye cloth-icon"></i>
-                    <div class="quick-add">ADD TO CART</div>
-                </div>
-                <div class="cloth-price">
-                    <div class="cloth-price-season">FRESH & FLORAL</div>
-                    <div class="cloth-price-variety" style="font-size: 0.8rem;">50 ML</div>
-                    <div class="cloth-price-price"><s>Rs. 2,250.00</s>Rs. 1,800.00</div>
-                </div>
-            </div>  -->
-            <i class="fa-solid fa-chevron-right right" id="nxtBtn"></i>
+            <div class="cloth-price-price"><s>Rs. 2,250.00</s>Rs. 1,800.00</div>
+          </div>
         </div>
+        <div class="clothes">
+          <div class="cloth-img" id="perfume-img-4">
+            <div class="cloth-img-text">Sale</div>
+            <i class="fa-regular fa-heart cloth-icon"></i>
+            <i class="fa-regular fa-eye cloth-icon"></i>
+            <div class="quick-add">QUICK ADD</div>
+          </div>
+          <div class="cloth-price">
+            <div class="cloth-price-season">FLORAL & WARM</div>
+            <div class="cloth-price-variety" style="font-size: 0.8rem">
+              50 ML
+            </div>
+            <div class="cloth-price-price"><s>Rs. 2,250.00</s>Rs. 1,800.00</div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- why choose myaura ====================================== -->
-     <section class="services"> 
-        <div class="shopHead service-head">WHY CHOOSE MYAURA?</div>
-        <div class="services-slider">
-            <div class="slider-wrapper">
-            <div class="service" id="luxury"><img src="imgs/luxury.png"></div>
-            <div class="service" id="reliability"><img src="imgs/reliability.png"></div>
-            <div class="service" id="quality"><img src="imgs/quality.png"></div>
-            <div class="service" id="long-lasting"><img src="imgs/long-lasting.png"></div>
-            <div class="service" id="dedicated-customer-service"><img src="imgs/dedicated.png"></div>
-            <div class="service" id="luxury"><img src="imgs/luxury.png"></div>
-            <div class="service" id="reliability"><img src="imgs/reliability.png"></div>
-            <div class="service" id="quality"><img src="imgs/quality.png"></div>
-            <div class="service" id="long-lasting"><img src="imgs/long-lasting.png"></div>
-            <div class="service" id="dedicated-customer-service"><img src="imgs/dedicated.png"></div>
+    <section class="services">
+      <div class="shopHead service-head">WHY CHOOSE MYAURA?</div>
+      <div class="services-slider">
+        <div class="slider-wrapper">
+          <div class="service" id="luxury"><img src="imgs/luxury.png" /></div>
+          <div class="service" id="reliability">
+            <img src="imgs/reliability.png" />
+          </div>
+          <div class="service" id="quality"><img src="imgs/quality.png" /></div>
+          <div class="service" id="long-lasting">
+            <img src="imgs/long-lasting.png" />
+          </div>
+          <div class="service" id="dedicated-customer-service">
+            <img src="imgs/dedicated.png" />
+          </div>
+          <div class="service" id="luxury"><img src="imgs/luxury.png" /></div>
+          <div class="service" id="reliability">
+            <img src="imgs/reliability.png" />
+          </div>
+          <div class="service" id="quality"><img src="imgs/quality.png" /></div>
+          <div class="service" id="long-lasting">
+            <img src="imgs/long-lasting.png" />
+          </div>
+          <div class="service" id="dedicated-customer-service">
+            <img src="imgs/dedicated.png" />
+          </div>
         </div>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="footer-inner">
+        <div class="footer-inner-col">
+          <a href="" class="footer-main-heading">Quick Links</a>
+          <a href="" class="footer-sub-heading">Home</a>
+          <a href="" class="footer-sub-heading">Bundle Deals</a>
+          <a href="" class="footer-sub-heading">Apparel</a>
+          <a href="" class="footer-sub-heading">Fragrances</a>
+          <a href="" class="footer-sub-heading">Our Story</a>
         </div>
-     </section>
-     <footer class="footer-section">
-        <div class="footer-inner">
-            <div class="footer-inner-col">
-                <a href="" class="footer-main-heading">Quick Links</a>
-                <a href="" class="footer-sub-heading">Home</a>
-                <a href="" class="footer-sub-heading">Bundle Deals</a>
-                <a href="" class="footer-sub-heading">Apparel</a>
-                <a href="" class="footer-sub-heading">Fragrances</a>
-                <a href="" class="footer-sub-heading">Our Story</a>
-            </div>
-            <div class="footer-inner-col">
-                <a href="" class="footer-main-heading">Informations</a>
-                <a href="" class="footer-sub-heading">Our Vision</a>
-                <a href="" class="footer-sub-heading">Our Mission</a>
-                <a href="" class="footer-sub-heading">Contact Us</a>
-                <a href="" class="footer-sub-heading">FAQs</a>
-            </div>
-            <div class="footer-inner-col">
-                <a href="" class="footer-main-heading">Customer Service</a>
-                <a href="" class="footer-sub-heading">Privacy Policy</a>
-                <a href="" class="footer-sub-heading">Terms of Service</a>
-                <a href="" class="footer-sub-heading">Shipping Policy</a>
-                <a href="" class="footer-sub-heading">Refund/Exchange Policy</a>
-            </div>
-            <div class="footer-inner-col">
-                <a href="" class="footer-main-heading">Newletter Sign up</a>
-                <h5 class="footer-sub-heading">Sign up for exclusive updates, new arrivals & insider only discounts</h5>
-                <div class="email-submit">
-                <input type="email" placeholder="enter your email address" class="email-input">
-                <button class="submit-button">SUBMIT</button>
-                </div>
-              <div class="contact-social-media">
-                <img src="imgs/facebook.png">
-                <img src="imgs/instagram.png">
-                <img src="imgs/linkedin.png">
-              </div>
-            </div>
+        <div class="footer-inner-col">
+          <a href="" class="footer-main-heading">Informations</a>
+          <a href="" class="footer-sub-heading">Our Vision</a>
+          <a href="" class="footer-sub-heading">Our Mission</a>
+          <a href="" class="footer-sub-heading">Contact Us</a>
+          <a href="" class="footer-sub-heading">FAQs</a>
         </div>
-        <div class="footer-credits">
-            © 2024 MYAURA, All Right Reserved.
+        <div class="footer-inner-col">
+          <a href="" class="footer-main-heading">Customer Service</a>
+          <a href="" class="footer-sub-heading">Privacy Policy</a>
+          <a href="" class="footer-sub-heading">Terms of Service</a>
+          <a href="" class="footer-sub-heading">Shipping Policy</a>
+          <a href="" class="footer-sub-heading">Refund/Exchange Policy</a>
         </div>
-     </footer>
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="footer-inner-col">
+          <a href="" class="footer-main-heading">Newletter Sign up</a>
+          <h5 class="footer-sub-heading">
+            Sign up for exclusive updates, new arrivals & insider only discounts
+          </h5>
+          <div class="email-submit">
+            <input
+              type="email"
+              placeholder="enter your email address"
+              class="email-input"
+            />
+            <button class="submit-button">SUBMIT</button>
+          </div>
+          <div class="contact-social-media">
+            <img src="imgs/facebook.png" />
+            <img src="imgs/instagram.png" />
+            <img src="imgs/linkedin.png" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-credits">© 2024 MYAURA, All Right Reserved.</div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
 </html>
